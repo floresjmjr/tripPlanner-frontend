@@ -1,0 +1,8 @@
+.body-container  {
+  display: flex;
+  justify-content: center;
+}
+
+.body-component {
+  width: 1140px;
+}

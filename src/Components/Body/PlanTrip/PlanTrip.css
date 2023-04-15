@@ -1,0 +1,98 @@
+
+/* Body */
+
+.plan-trip-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 110px;
+}
+
+/* Header */
+.plan-trip-header {
+  margin: 50px 0;
+}
+
+.plan-trip-header h1 {
+  margin: 0;
+  font-size: 2.25rem;
+}
+
+
+/* Form */
+.plan-trip-form {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 540px;
+  margin: 0;
+}
+
+.plan-location {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.plan-location p {
+  margin-right: -80px;
+  z-index: 0;
+  font-weight: bold;
+}
+
+.plan-location input {
+  width: 100%;
+  height: 60px;
+  border-radius: 8px;
+  border: 1px solid #dee2e6;
+  padding: 20px 90px;
+  box-sizing: border-box;
+}
+
+
+.plan-start-end{
+  display: flex;
+  margin-left: -15px;
+  width: 100%;
+}
+
+.plan-start, .plan-end {
+  width: 50%;
+  border-radius: 8px;
+  height: 60px;
+  padding: 20px;
+  box-sizing: border-box;
+  border: 1px solid #dee2e6;
+}
+
+.invites {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  color: #6c757d;
+}
+
+.invites select {
+  border: none;
+  background-color: white;
+  outline: none;
+}
+
+.plan-trip-form button {
+  background-color: #f75940;
+  color: white;
+  outline: none;
+  border: none;
+  border-radius: 50px;
+  height: 55px;
+  width: 135px;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.new-guide-link {
+  color: #f75940;
+  font-weight: bold;
+}

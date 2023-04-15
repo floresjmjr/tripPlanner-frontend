@@ -1,0 +1,41 @@
+
+
+.recent-trip-img {
+  min-width: 265px;
+  min-height: 175px;
+  max-width: 360px;
+  max-height: 240px;
+  background-color: gray;
+  border-radius: 20px;
+  margin-bottom: 10px;
+}
+
+.recent-trip-name {
+  margin-bottom: 5px;
+}
+
+.recent-trip-details {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  height: 40px;
+  gap: 10px;
+}
+
+.recent-seperator {
+  font-weight: bold;
+  padding-bottom: 6px;
+}
+
+.recent-trip-initial {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  background-color: #e9ecef;
+  color: gray;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+}
+

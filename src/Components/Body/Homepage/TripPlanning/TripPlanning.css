@@ -1,0 +1,105 @@
+
+.trip-planning-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.trip-planning-container h1 {
+  font-size: 2rem;
+}
+
+.recent-trip-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.trip-planning-container header {
+  display: flex;
+  align-items: center;
+}
+
+.plan-new-trip-orange {
+  text-decoration: none;
+  background-color: #f75940;
+  border: none;
+  border-radius: 20px;
+  font-weight: bold;
+  color: white;
+  padding: 10px 15px;
+  font-size: .9rem;
+}
+
+
+/* Recent and Upcoming */
+
+.plan-new-trip-link {
+  font-weight: bold;
+  color: #f75940;
+  text-decoration: none;
+}
+
+.recent-trip-list-container {
+  display: flex;
+  justify-content: start;
+  width: 100%;
+  gap: 15px;
+}
+
+/* visited-locations */
+
+.visited-locations {
+  margin-top: 80px;
+}
+
+.map-image-placeholder {
+  width: 100%;
+  height: 300px;
+  border-radius: 20px;
+  background-color: grey;
+  margin-bottom: 80px;
+}
+
+/* trip and guides */
+
+.trips-guides {
+  display: flex;
+  justify-content: space-between;
+}
+
+.trip-guide-container{
+  display: flex;
+  flex-direction: column;
+  width: 48%;
+  height: 120px;
+  background-color: #f3f4f5;
+  border-radius: 8px;
+  padding: 24px;
+  box-sizing: border-box;
+}
+
+.trip-guide-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.plan-new-trip-gray {
+  text-decoration: none;
+  background-color: #e9ecef;
+  border: none;
+  border-radius: 20px;
+  font-weight: bold;
+  color: black;
+  padding: 10px 15px;
+  font-size: .9rem;
+}
+
+.trip-guide-header h4 {
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+
+

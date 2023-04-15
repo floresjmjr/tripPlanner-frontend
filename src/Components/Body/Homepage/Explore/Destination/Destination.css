@@ -1,0 +1,29 @@
+.destination-container {
+  display: flex;
+  flex-direction: column;
+  margin-right: 15px;
+  width: 200px;
+}
+
+.destination-container h4 {
+  margin: 10px 0;
+}
+
+.destination-container p {
+  margin: 0;
+  margin-bottom: 15px;
+}
+
+.destination-image-placeholder{
+  width: 200px;
+  height: 140px;
+  border-radius: 20px;
+  background-color: grey;
+}
+
+.destination-meta-data {
+  display: flex;
+  justify-content: space-between;
+}
+
+
