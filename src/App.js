@@ -1,21 +1,17 @@
 import './App.css';
-import Homepage from './Components/Body/Homepage/Homepage'
-import PlanTrip from './Components/Body/PlanTrip/PlanTrip'
+import Homepage from './Components/Body/Homepage/Homepage';
+import PlanTrip from './Components/Body/PlanTrip/PlanTrip';
 
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
+const routerConfigObj = createBrowserRouter([
+  { path: '/', element: <Homepage /> },
+  { path: '/home', element: <Homepage /> },
+  { path: '/plan', element: <PlanTrip /> },
+]);
 
 function App() {
-  return (
-    <BrowserRouter>
-      <Routes>
-        <Route path='/' element={<Homepage/>}>
-          <Route path='/home' element={<Homepage/>}/>
-        </Route>
-        <Route path='/plan' element={<PlanTrip/>}/>
-      </Routes>
-    </BrowserRouter>
-  );
+  return <RouterProvider router={routerConfigObj} />;
 }
 
 export default App;
