@@ -2,11 +2,12 @@ import React, {useEffect, useState} from 'react'
 import './TripPlanning.css'
 import axiosConfig from '../../../../Utils/axiosConfig'
 import TripCard from './TripCard/TripCard'
+import {Link } from 'react-router-dom';
 
 const TripPlanning = () => {
 
   const [trips, set_trips] = useState([])
-  let recent_trips = (<p>You haven't created anything yet. <a className='plan-new-trip-link' href="/plan">Plan a new trip</a>.</p>)
+  let recent_trips = (<p>You haven't created anything yet. <Link className='plan-new-trip-link' to="/plan">Plan a new trip</Link>.</p>)
 
   // Functions
   const getAllItineraries = async()=>{
@@ -36,7 +37,7 @@ const TripPlanning = () => {
     <div className="trip-planning-container">
       <div className="recent-trip-container">
         <h1>Recently viewed and upcoming</h1>
-        <a className="plan-new-trip-orange" href="/plan">+ Plan new trip</a>
+        <Link className="plan-new-trip-orange" to="/plan">+ Plan new trip</Link>
       </div>
       <section className="recent-upcoming">
         <div className="recent-trip-list-container">
@@ -50,16 +51,16 @@ const TripPlanning = () => {
         <div className="trip-guide-container">
           <div className="trip-guide-header">
             <h4>Your trips</h4>
-            <a className="plan-new-trip-gray" href="/plan">+ Plan new trip</a>
+            <Link className="plan-new-trip-gray" to="/plan">+ Plan new trip</Link>
           </div>
-          <p>You don't have any trips yet. <a className='plan-new-trip-link ' href="/plan">Plan a new trip</a>.</p>
+          <p>You don't have any trips yet. <Link className='plan-new-trip-link ' to="/plan">Plan a new trip</Link>.</p>
         </div>
         <div className="trip-guide-container">
           <div className="trip-guide-header">
             <h4>Your guides</h4>
-            <a className="plan-new-trip-gray" href="/plan">+ Create new guide</a>
+            <Link className="plan-new-trip-gray" to="/plan">+ Create new guide</Link>
           </div>
-          <p>You don't have any guides yet. <a className='plan-new-trip-link' href="/guide">Create a new guide</a>.</p>
+          <p>You don't have any guides yet. <Link className='plan-new-trip-link' to="/guide">Create a new guide</Link>.</p>
         </div>
       </section>
     </div>

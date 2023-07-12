@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import './MainHeader.css';
 import { useSelector, useDispatch } from 'react-redux';
 import { authenticationSliceActions } from '../../Utils/store';
+import { Link } from 'react-router-dom';
 import Generic from './Modals/Generic';
 
 const Header = () => {
@@ -37,13 +38,13 @@ const Header = () => {
               <h2>wanderbranch</h2>
             </div>
             <div className='nav-links'>
-              <a href='/home'>Home</a>
-              <a href='' onClick={displayModalHandler}>
+              <Link to='/home'>Home</Link>
+              <Link to='' onClick={displayModalHandler}>
                 Travel guides
-              </a>
-              <a href='' onClick={displayModalHandler}>
+              </Link>
+              <Link to='' onClick={displayModalHandler}>
                 Hotels
-              </a>
+              </Link>
             </div>
           </div>
           {signedIn && (

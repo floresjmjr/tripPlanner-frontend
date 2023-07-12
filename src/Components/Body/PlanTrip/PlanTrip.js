@@ -2,6 +2,7 @@ import React from 'react'
 import './PlanTrip.css'
 import Footer from '../../Footers/MainFooter'
 import Header from '../../Headers/MainHeader'
+import {Link } from 'react-router-dom';
 
 const PlanTrip = ()=> {
 
@@ -33,7 +34,7 @@ const PlanTrip = ()=> {
           </div>
           <button type="click">Start Planning</button>
         </form>
-        <a href="/guide" className="new-guide-link">Or write a new guide</a>
+        <Link to="/guide" className="new-guide-link">Or write a new guide</Link>
       </div>
       <Footer/>
     </div>
