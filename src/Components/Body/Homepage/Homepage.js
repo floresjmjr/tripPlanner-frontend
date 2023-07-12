@@ -9,10 +9,10 @@ import { useSelector } from "react-redux";
 const Homepage = () => {
   const signedIn = useSelector((state) => state.authentication.signedIn);
   return (
-    <div>
+    <React.Fragment>
       <Header />
       {signedIn && (
-        <>
+        <React.Fragment>
           <div className="body-container">
             <div className="body-component">
               <TripPlanning />
@@ -20,9 +20,9 @@ const Homepage = () => {
             </div>
           </div>
           <Footer />
-        </>
+        </React.Fragment>
       )}
-    </div>
+    </React.Fragment>
   );
 };
 
